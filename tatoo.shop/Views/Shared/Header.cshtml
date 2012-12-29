@@ -1,0 +1,14 @@
+﻿<ul id="navigation">
+    <li class="first selected">
+        @Html.ActionLink("Home", "Index", "TatooShop", new { }, new { })
+    </li>
+    <li><a href="#" id="link2">Portfolio</a></li>
+    <li><a href="#" id="link3">About</a></li>
+    <li><a href="#" id="link4">Rates</a></li>
+    <li><a href="#" id="link5">News</a></li>
+    <li><a href="#" id="link6">Blogs</a></li>
+    <li><a href="#" id="link7">Contact Us</a></li>
+</ul>
+<a href="@Url.Action("Index", "TatooShop")" id="logo">
+    <img src="@Url.Content("~/Template/tattooshopwebsitetemplate/images/logo.gif")" alt="">
+</a>

@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Template/tattooshopwebsitetemplate/css/style.css")"/>
+</head>
+    <body>
+        <div id="header">
+            @RenderPage("Header.cshtml")
+        </div>
+        <div id="content">
+            @RenderBody()
+        </div>
+        <div id="footer">
+            @RenderPage("Footer.cshtml")
+        </div>
+    </body>
+</html>
