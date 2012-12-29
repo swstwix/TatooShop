@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tatoo.shop", "tatoo.shop\tatoo.shop.csproj", "{1ABDD900-B3FA-4519-959E-A0F9A7CB2768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tatoo.shop.Tests", "tatoo.shop.Tests\tatoo.shop.Tests.csproj", "{C21E8473-C743-4298-AA4A-D61AB6EE159B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ABDD900-B3FA-4519-959E-A0F9A7CB2768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ABDD900-B3FA-4519-959E-A0F9A7CB2768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ABDD900-B3FA-4519-959E-A0F9A7CB2768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ABDD900-B3FA-4519-959E-A0F9A7CB2768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C21E8473-C743-4298-AA4A-D61AB6EE159B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C21E8473-C743-4298-AA4A-D61AB6EE159B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C21E8473-C743-4298-AA4A-D61AB6EE159B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C21E8473-C743-4298-AA4A-D61AB6EE159B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
