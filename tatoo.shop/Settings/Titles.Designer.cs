@@ -86,5 +86,14 @@ namespace tatoo.shop.Settings {
                 return ResourceManager.GetString("PortfolioPageTitle", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Rates.
+        /// </summary>
+        public static string RatesPageTitle {
+            get {
+                return ResourceManager.GetString("RatesPageTitle", resourceCulture);
+            }
+        }
     }
 }

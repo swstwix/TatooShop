@@ -129,4 +129,8 @@
     <value>Portfolio</value>
     <comment>/TatooShop/Portfolio</comment>
   </data>
+  <data name="RatesPageTitle" xml:space="preserve">
+    <value>Rates</value>
+    <comment>/TatooShop/Rates</comment>
+  </data>
 </root>

@@ -25,5 +25,10 @@ namespace tatoo.shop.Controllers
         {
             return View(new AboutModel());
         }
+
+        public ViewResult Rates()
+        {
+            return View(new RatesModel());
+        }
     }
 }
