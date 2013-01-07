@@ -103,6 +103,7 @@
     <Compile Include="Controllers\TatooShopController.cs" />
     <Compile Include="DependencyInjection\NinjectDependencyResolver.cs" />
     <Compile Include="Models\TatooShop\AboutModel.cs" />
+    <Compile Include="Models\TatooShop\BlogsModel.cs" />
     <Compile Include="Models\TatooShop\NewsModel.cs" />
     <Compile Include="Models\TatooShop\PortfolioModel.cs" />
     <Compile Include="Global.asax.cs">
@@ -271,6 +272,8 @@
     <Content Include="Views\TatooShop\Portfolio.cshtml" />
     <Content Include="Views\TatooShop\About.cshtml" />
     <Content Include="Views\TatooShop\Rates.cshtml" />
+    <Content Include="Views\TatooShop\News.cshtml" />
+    <Content Include="Views\TatooShop\Blogs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

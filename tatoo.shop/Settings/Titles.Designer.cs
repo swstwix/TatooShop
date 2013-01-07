@@ -70,6 +70,15 @@ namespace tatoo.shop.Settings {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Blogs.
+        /// </summary>
+        public static string BlogsPageTitle {
+            get {
+                return ResourceManager.GetString("BlogsPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Home.
         /// </summary>
         public static string HomePageTitle {

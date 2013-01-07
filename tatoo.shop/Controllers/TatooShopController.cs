@@ -35,5 +35,10 @@ namespace tatoo.shop.Controllers
         {
             return View(new NewsModel());
         }
+
+        public ViewResult Blogs()
+        {
+            return View(new BlogsModel());
+        }
     }
 }
