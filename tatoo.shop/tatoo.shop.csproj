@@ -103,6 +103,7 @@
     <Compile Include="Controllers\TatooShopController.cs" />
     <Compile Include="DependencyInjection\NinjectDependencyResolver.cs" />
     <Compile Include="Models\TatooShop\AboutModel.cs" />
+    <Compile Include="Models\TatooShop\NewsModel.cs" />
     <Compile Include="Models\TatooShop\PortfolioModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

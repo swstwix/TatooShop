@@ -79,6 +79,15 @@ namespace tatoo.shop.Settings {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на News.
+        /// </summary>
+        public static string NewsPageTitle {
+            get {
+                return ResourceManager.GetString("NewsPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Portfolio.
         /// </summary>
         public static string PortfolioPageTitle {

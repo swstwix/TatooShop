@@ -125,6 +125,10 @@
     <value>Home</value>
     <comment>/</comment>
   </data>
+  <data name="NewsPageTitle" xml:space="preserve">
+    <value>News</value>
+    <comment>/TatooShop/News</comment>
+  </data>
   <data name="PortfolioPageTitle" xml:space="preserve">
     <value>Portfolio</value>
     <comment>/TatooShop/Portfolio</comment>
