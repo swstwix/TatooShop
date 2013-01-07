@@ -1,0 +1,36 @@
+﻿@model tatoo.shop.Models.TatooShop.PortfolioModel
+@using tatoo.shop.Settings;
+@{
+    ViewBag.Title = Titles.PortfolioPageTitle;
+    Layout = "~/Views/Shared/_MasterPage.cshtml";
+}
+
+<div id="portfolio">
+    <h2>Portfolio</h2>
+    <ul>
+        <li>
+            <a href="#">
+                <img src="@Url.Content("~/Template/tattooshopwebsitetemplate/images/portfolio-arm-tattoo.jpg")" alt=""/></a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="@Url.Content("~/Template/tattooshopwebsitetemplate/images/portfolio-shoulder-tattoo.jpg")" alt=""/></a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="@Url.Content("~/Template/tattooshopwebsitetemplate/images/portfolio-hips-tattoo.jpg")" alt=""/></a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="@Url.Content("~/Template/tattooshopwebsitetemplate/images/portfolio-hips-tattoo2.jpg")" alt=""/></a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="@Url.Content("~/Template/tattooshopwebsitetemplate/images/portfolio-legs-tattoo.jpg")" alt=""/></a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="@Url.Content("~/Template/tattooshopwebsitetemplate/images/portfolio-arm-tattoo2.jpg")" alt=""/></a>
+        </li>
+    </ul>
+</div>

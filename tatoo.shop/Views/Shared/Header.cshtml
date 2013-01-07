@@ -1,9 +1,10 @@
-﻿<ul id="navigation">
+﻿@using tatoo.shop.Settings;
+<ul id="navigation">
     <li class="first selected">
-        @Html.ActionLink("Home", "Index", "TatooShop", new { }, new { })
+        @Html.ActionLink(Titles.HomePageTitle, "Index", "TatooShop", new { }, new { })
     </li>
-    <li><a href="#" id="link2">Portfolio</a></li>
-    <li><a href="#" id="link3">About</a></li>
+    <li>@Html.ActionLink(Titles.PortfolioPageTitle, "Portfolio", "TatooShop", new { }, new { })</li>
+    <li>@Html.ActionLink(Titles.AboutPageTitle, "About", "TatooShop", new { }, new { })</li>
     <li><a href="#" id="link4">Rates</a></li>
     <li><a href="#" id="link5">News</a></li>
     <li><a href="#" id="link6">Blogs</a></li>

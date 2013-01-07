@@ -7,12 +7,10 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Moq;
-using NUnit.Framework;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using tatoo.shop.Controllers;
-using tatoo.shop.FrontServices;
 using tatoo.shop.Models;
-using Assert = NUnit.Framework.Assert;
+using tatoo.shop.Models.TatooShop;
 
 namespace tatoo.shop.Tests.Controllers
 {
@@ -20,15 +18,13 @@ namespace tatoo.shop.Tests.Controllers
     public class TatooShopControllerTest
     {
         private TatooShopController controller;
-        private Mock<ITatooShopFrontService> tatooShopFrontService;
         private MockRepository mockRepository;
 
         [TestInitialize]
         public void Init()
         {
             mockRepository = new MockRepository(MockBehavior.Default);
-            tatooShopFrontService = mockRepository.Create<ITatooShopFrontService>();
-            controller = new TatooShopController(tatooShopFrontService.Object);
+            controller = new TatooShopController();
         }
 
         [TestCleanup]
@@ -38,35 +34,46 @@ namespace tatoo.shop.Tests.Controllers
         }
 
         [TestMethod]
-        public void IndexPageExists()
-        {
-            var viewResult = controller.Index();
-            Assert.That(viewResult, Is.Not.Null);
-        }
-
-        [TestMethod]
         public void IndexPageIsModelView()
         {
             var viewResult = controller.Index() as ViewResult;
-            Assert.That(viewResult, Is.Not.Null);
+            Assert.IsNotNull(viewResult);
         }
 
         [TestMethod]
         public void IndexPageIsIndexPageViewModel()
         {
             var viewResult = controller.Index() as ViewResult;
-            Assert.That(viewResult.Model.GetType(), Is.EqualTo(typeof(IndexPageModel)));
+            Assert.IsInstanceOfType(viewResult.Model, typeof(IndexPageModel));
         }
 
         [TestMethod]
-        public void IndexPageIsLoadModelFromTatooShopFrontService()
+        public void PorfolioPageExists()
         {
-            tatooShopFrontService
-                .Setup(x => x.LoadIndexPageModel())
-                .Returns(new IndexPageModel())
-                .Verifiable();
+            var viewResult = controller.Portfolio();
+            Assert.IsNotNull(viewResult);
+        }
 
-            controller.Index();
+        [TestMethod]
+        public void PortfolioViewModelIsPortfolioModel() 
+        {
+            var viewResult = controller.Portfolio() as ViewResult;
+            var model = viewResult.Model;
+            Assert.IsInstanceOfType(model, typeof(PortfolioModel));
+        }
+
+        [TestMethod]
+        public void AboutPageExists()
+        {
+            var viewResult = controller.About() as ViewResult;
+            Assert.IsNotNull(viewResult);
+        }
+
+        [TestMethod]
+        public void AboutPageViewModelIsAboutModel()
+        {
+            var viewResult = controller.About() as ViewResult;
+            Assert.IsInstanceOfType(viewResult.Model, typeof(AboutModel));
         }
     }
 }
