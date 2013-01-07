@@ -79,6 +79,15 @@ namespace tatoo.shop.Settings {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Contact Us.
+        /// </summary>
+        public static string ContactUsPageTitle {
+            get {
+                return ResourceManager.GetString("ContactUsPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Home.
         /// </summary>
         public static string HomePageTitle {

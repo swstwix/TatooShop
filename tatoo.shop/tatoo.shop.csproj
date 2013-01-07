@@ -29,6 +29,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -104,6 +105,7 @@
     <Compile Include="DependencyInjection\NinjectDependencyResolver.cs" />
     <Compile Include="Models\TatooShop\AboutModel.cs" />
     <Compile Include="Models\TatooShop\BlogsModel.cs" />
+    <Compile Include="Models\TatooShop\ContactUsModel.cs" />
     <Compile Include="Models\TatooShop\NewsModel.cs" />
     <Compile Include="Models\TatooShop\PortfolioModel.cs" />
     <Compile Include="Global.asax.cs">
@@ -274,6 +276,7 @@
     <Content Include="Views\TatooShop\Rates.cshtml" />
     <Content Include="Views\TatooShop\News.cshtml" />
     <Content Include="Views\TatooShop\Blogs.cshtml" />
+    <Content Include="Views\TatooShop\ContactUs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

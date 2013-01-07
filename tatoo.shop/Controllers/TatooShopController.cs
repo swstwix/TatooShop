@@ -40,5 +40,10 @@ namespace tatoo.shop.Controllers
         {
             return View(new BlogsModel());
         }
+
+        public ViewResult ContactUs()
+        {
+            return View(new ContactUsModel());
+        }
     }
 }

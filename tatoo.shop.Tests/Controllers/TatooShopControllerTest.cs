@@ -117,5 +117,19 @@ namespace tatoo.shop.Tests.Controllers
             var viewResult = controller.Blogs() as ViewResult;
             Assert.IsInstanceOfType(viewResult.Model, typeof(BlogsModel));
         }
+
+        [TestMethod]
+        public void ContactUsPageExists()
+        {
+            var viewResult = controller.ContactUs() as ViewResult;
+            Assert.IsNotNull(viewResult);
+        }
+
+        [TestMethod]
+        public void ContactUsViewModelIsContactUsModel()
+        {
+            var viewResult = controller.ContactUs() as ViewResult;
+            Assert.IsInstanceOfType(viewResult.Model, typeof(ContactUsModel));
+        }
     }
 }
