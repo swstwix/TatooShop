@@ -15,7 +15,6 @@ namespace tatoo.shop.Controllers
             return View(new IndexPageModel());
         }
 
-
         public object Portfolio()
         {
             return View(new PortfolioModel());
